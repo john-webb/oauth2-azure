@@ -30,7 +30,7 @@ class Azure extends AbstractProvider
 
     public $tenant = 'common';
 
-    public $defaultEndPointVersion = self::ENDPOINT_VERSION_1_0;
+    public $defaultEndPointVersion = self::ENDPOINT_VERSION_2_0;
 
     public $urlAPI = 'https://graph.windows.net/';
 
