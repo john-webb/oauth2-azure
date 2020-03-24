@@ -247,7 +247,7 @@ class Azure extends AbstractProvider
     public function getJwtVerificationKeys()
     {
         $factory = $this->getRequestFactory();
-        $request = $factory->getRequestWithOptions('get', 'https://login.windows.net/common/discovery/keys', []);
+        $request = $factory->getRequestWithOptions('get', 'https://login.windows.net/common/discovery/v2.0/keys', []);
 
         $response = $this->getParsedResponse($request);
 
